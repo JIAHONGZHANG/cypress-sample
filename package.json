@@ -1,0 +1,26 @@
+{
+  "name": "cypress-api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server employees.js",
+    "cy:open": "cypress open",
+    "cy:run:Test1": "cypress run --spec \"cypress/integration/examples/Test1.js\"",
+    "cy:run:Dashboard": "cypress run --record --key 056a0264-d26f-41c6-a2cb-cd0e07686647",
+    "generate": "openapi --input ./swagger.json --output ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.2",
+    "cypress": "^7.2.0",
+    "faker": "^4.1.0",
+    "json-server": "^0.15.0",
+    "openapi-typescript-codegen": "^0.12.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
